@@ -1,3 +1,60 @@
 body {
-    background-color: bisque;
+    background-color: rgb(41, 151, 170);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* Card */
+.card {
+    background-color: darkgray;
+    display: flex;
+    height: 300px;
+    margin: 50px;
+    width: 300px;
+    justify-content: center;
+    flex-flow: row wrap;
+    border-radius: 5px;
+    border: 3px dotted #333;
+    float: left;
+}
+
+.card :hover{
+    background-color: springgreen;
+    display: block;
+}
+
+.card-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+
+
+.card-b1{
+    background-color: rgb(209, 206, 46);
+    display: block;
+}
+
+
+/*
+.li{
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+*/
