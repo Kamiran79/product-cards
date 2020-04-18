@@ -7,7 +7,7 @@ body {
     margin-bottom: 100px;
     clear: both;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 /* Column */
@@ -15,11 +15,17 @@ body {
 .column {
     float: left;
     width: 25%;
-    padding: 0 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid lightblue;
+    margin: 10px;
+    flex-wrap: wrap;
 }
 
 
-/* Row */
+/* Row 
 
 .row {
     margin: 0 --5px;
@@ -46,13 +52,71 @@ body {
 * {
     box-sizing: border-box;
 }
+/**/
+
+
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 0;
     text-align: center;
     background-color: #f1f1f1;
+    flex-grow: 4;
+    
+    flex: 1 0 1%;
+
   }
+
+  .card h2 {
+      border-color: lightblue;
+      border: 1px solid lightblue;
+      margin: 0;
+      padding: 10px;
+      
+  }
+
+  .card h3 {
+      background-color: gray;
+      color: yellow;
+      /*float: left;*/
+      text-align: left;
+      padding: 5px;
+      margin: 0;
+      display: block;
+      font-family: sans-serif;
+      font-size: medium;
+  }
+
+  .card img {
+      height: 150px;
+      width: 100px;
+  }
+
+  .card li {
+      list-style-type: none;      
+  }
+
+  .card p {
+      text-align: justify;
+      padding: 10px;
+  }
+
+  /* card item two and three */
+  .card-list-two {
+      text-align: left;
+  }
+
+  .card footer {
+      font-size: 10px;
+  }
+
+  .card header {
+      margin-left: 10px;
+  }
+ .card-list-two li {
+     margin-left: 20px;
+ }
+
 
 /*
 .card {
